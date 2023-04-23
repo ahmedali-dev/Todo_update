@@ -1,0 +1,313 @@
+.rowCard {
+  padding: 1rem;
+  margin-top: 3rem;
+  display: grid;
+  /*grid-template-columns: repeat(auto-fill, minmax(2fr, auto));*/
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+
+  @media screen and (min-width: 550px) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 250px));
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  &_card {
+    border-radius: .7rem;
+    //overflow: hidden;
+    background: var(--white);
+    box-shadow: var(--shadowBlue);
+    position: relative;
+
+    &_link {
+      &_image {
+        height: 15rem;
+        border-radius: .7rem;
+        overflow: hidden;
+
+        img {
+          height: 100%;
+          width: 100%;
+          //object-fit: cover;
+        }
+      }
+
+      &_content {
+        padding: 1rem;
+
+        &_name {
+          margin-bottom: 1rem;
+        }
+
+        &_status {
+          font-size: 1.1rem;
+
+        }
+      }
+    }
+
+    &_option {
+      &_button {
+        position: absolute;
+        bottom: 2rem;
+        right: 1rem;
+        cursor: pointer;
+        width: 4rem;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        padding: 0.7rem;
+        border-radius: 50%;
+
+
+        &_optBtn {
+          //margin: auto;
+          width: .5rem;
+          height: .5rem;
+          background: var(--blue);
+          border-radius: 50%;
+          margin-bottom: .3rem;
+        }
+
+
+      }
+
+      &_button:hover {
+        box-shadow: var(--shadowBlue);
+        background: var(--whiteBlue);
+      }
+
+
+      &_optContent {
+        display: none;
+        position: fixed;
+        bottom: 0rem;
+        left: 0rem;
+        width: 100%;
+        padding: 1rem;
+        border-radius: .7rem;
+        box-shadow: var(--shadowBlue);
+        background: var(--white);
+        padding-bottom: 2rem;
+        z-index: 2;
+
+        @media screen and (min-width: 768px) {
+          position: absolute;
+        }
+
+        &_active {
+          display: block;
+        }
+
+
+        &_btnRemove {
+          width: 40%;
+          height: 1rem;
+          background: var(--whiteBlueLight);
+          margin: 1rem auto 2rem auto;
+          border-radius: .7rem;
+        }
+
+        &_btn {
+          width: 100%;
+          height: 6rem;
+          //background: blue;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 1rem;
+          padding: .3rem;
+          border-radius: .4rem;
+          cursor: pointer;
+          text-transform: capitalize;
+
+
+          &:hover {
+            background: var(--whiteBlue);
+          }
+
+          &:nth-child(2) {
+            color: var(--redLight);
+
+            svg {
+              fill: var(--redLight);
+            }
+          }
+
+          svg {
+            //width: inherit;
+            height: 3rem;
+
+
+          }
+        }
+      }
+    }
+  }
+}
+
+.rowCard.rowCardSidePare {
+  @media screen and (min-width: 786px) {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    width: 100%;
+   
+
+    .rowCard_card_active {
+      background: var(--blue) !important;
+    }
+    .rowCard_card {
+      border-radius: .7rem;
+      //overflow: hidden;
+      background: var(--whiteBlue);
+      box-shadow: unset;
+      width: 100%;
+      position: relative;
+
+
+      .rowCard_card_link {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 1rem 2rem;
+        border-radius: .7rem;
+
+
+        &_image {
+          height: 5rem;
+          width: 5rem;
+          border-radius: 50%;
+          overflow: hidden;
+
+          img {
+            height: 100%;
+            width: 100%;
+            //object-fit: cover;
+          }
+        }
+
+        &_content {
+          padding: 1rem;
+
+          &_name {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+          }
+
+          &_status {
+            font-size: 1.1rem;
+
+          }
+        }
+      }
+
+      &_option {
+        &_button {
+          position: absolute;
+          bottom: 2rem;
+          right: 1rem;
+          cursor: pointer;
+          width: 4rem;
+          height: 4rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-flow: column;
+          padding: 0.7rem;
+          border-radius: 50%;
+
+
+          &_optBtn {
+            //margin: auto;
+            width: .5rem;
+            height: .5rem;
+            background: var(--blue);
+            border-radius: 50%;
+            margin-bottom: .3rem;
+          }
+
+
+        }
+
+        &_button:hover {
+          box-shadow: var(--shadowBlue);
+          background: var(--whiteBlue);
+        }
+
+
+        &_optContent {
+          display: none;
+          position: fixed;
+          bottom: 0rem;
+          left: 0rem;
+          width: 100%;
+          padding: 1rem;
+          border-radius: .7rem;
+          box-shadow: var(--shadowBlue);
+          background: var(--white);
+          padding-bottom: 2rem;
+          z-index: 2;
+
+          @media screen and (min-width: 768px) {
+            position: absolute;
+          }
+
+          &_active {
+            display: block;
+          }
+
+
+          &_btnRemove {
+            width: 40%;
+            height: 1rem;
+            background: var(--whiteBlueLight);
+            margin: 1rem auto 2rem auto;
+            border-radius: .7rem;
+          }
+
+          &_btn {
+            width: 100%;
+            height: 6rem;
+            //background: blue;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 1rem;
+            padding: .3rem;
+            border-radius: .4rem;
+            cursor: pointer;
+            text-transform: capitalize;
+
+
+            &:hover {
+              background: var(--whiteBlue);
+            }
+
+            &:nth-child(2) {
+              color: var(--redLight);
+
+              svg {
+                fill: var(--redLight);
+              }
+            }
+
+            svg {
+              //width: inherit;
+              height: 3rem;
+
+
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+
+}

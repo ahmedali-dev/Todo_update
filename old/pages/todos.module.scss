@@ -1,0 +1,116 @@
+.todocontainer {
+  //display: flex;
+  position: relative;
+  //background: blue;
+  margin-top: 1rem;
+  padding: 1rem;
+
+  .todoList {
+    padding: 1rem;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    //max-height: 100vh;
+    z-index: var(--maxzindex);
+    transition: left 0.5s ease-in-out;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 3px;
+      //background: blue;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      width: 1.5px;
+      background: #3E54AC;
+      border-radius: 1rem;
+
+      &:hover {
+        background: #8951FF;
+      }
+    }
+
+    //
+    //&::-webkit-scrollbar-thumb:hover {
+    //
+    //}
+
+    &.active {
+      left: 0;
+    }
+
+    .row_y {
+      display: flex;
+      //align-items: center;
+      justify-content: center;
+      flex-flow: column;
+      overflow: hidden;
+    }
+
+    .form {
+      margin-bottom: 2rem;
+      position: sticky;
+      top: 1rem;
+
+      form {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+
+        input {
+          flex-basis: 90%;
+        }
+
+        button {
+          background: blue;
+          padding: 1rem;
+          border: .2rem solid #33333373;
+          border-radius: .5rem;
+          box-shadow: var(--shadowBlack20);
+          background: none;
+          cursor: pointer;
+          font-size: 1.2rem;
+
+          &:hover {
+            background: #655DBB;
+            border: none;
+            box-shadow: 3px 0 19px #655DBB;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    //background: blue;
+    margin-top: unset;
+    padding: unset;
+    //box-shadow: var(--shadowBlack20);
+    max-width: 1440px;
+    margin: auto;
+    .todoList {
+      padding: 2rem;
+      position: unset;
+      flex-basis: 40%;
+      background: #ECF2FF;
+    }
+
+    .todoItem {
+      padding: 3rem;
+      flex-basis: 70%;
+      padding: 2rem;
+      background: white;
+    }
+  }
+
+  @media screen and (min-width: 2000px) {
+
+    zoom: 1.5;
+  }
+}

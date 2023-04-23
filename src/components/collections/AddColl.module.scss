@@ -1,0 +1,83 @@
+.addcoll {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--white);
+  padding: 1rem;
+  z-index: 3;
+  box-shadow: var(--shadowBlue);
+
+  @media screen and (min-width: 500px) {
+    width: 30rem;
+    height: auto;
+    bottom: unset;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: .7rem;
+  }
+
+  @media screen and (min-width: 500px) {
+    width: 40rem;
+
+  }
+
+
+  &_form {
+    width: 100%;
+    //background: firebrick;
+
+
+    .formGroup_input {
+      display: flex;
+      flex-flow: column;
+      width: 100%;
+      margin-top: 1.2rem;
+      gap: .5rem;
+
+      input {
+        height: 6.7rem;
+        border: .2rem solid var(--blueLight);
+      }
+    }
+
+    .rowBtn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+      padding: 1rem;
+      gap: 2rem;
+
+      div {
+        width: 100%;
+
+        &:first-child {
+          button {
+            background: var(--blue);
+            color: var(--white);
+            border: none;
+            box-shadow: var(--shadowBlue);
+          }
+        }
+
+        &:last-child {
+          button {
+            border-color: var(--blueLight);
+          }
+        }
+
+        button {
+          position: relative;
+          width: 100%;
+          height: 5.5rem;
+
+          &:disabled {
+            background: var(--blueLight);
+          }
+        }
+      }
+    }
+  }
+}

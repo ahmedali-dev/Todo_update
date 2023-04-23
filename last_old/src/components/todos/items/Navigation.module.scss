@@ -1,0 +1,16 @@
+.div {
+	height: 90vh;
+	position: sticky;
+	top: 4rem;
+	left: 0;
+	width: 25rem;
+	border-radius: 0.7rem;
+	box-shadow: var(--shadowblue70);
+	background: var(--cblue70);
+	overflow-y: auto;
+	display: none;
+
+	@media screen and (min-width: 900px) {
+		display: block;
+	}
+}

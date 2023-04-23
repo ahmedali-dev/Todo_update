@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    /*colors*/
+    --cblue70: #3e53ac;
+    --cblue20: #ecf2ff;
+    --cviolet50: #bface2;
+    --cviolet70: #5e468b;
+    --cwhite: #ffffff;
+    --cwhiteLightDark: #bcbcbc;
+    --cblack: #333333;
+    --cdark: #636363;
+    --cdark40: #9fa7ba;
+    --cdark50: #5f6b86;
+
+    /*    shadow*/
+    --shadowblue70: -2px 5px 13px 2px rgba(62, 84, 172, 0.23);
+    --shadowBlack40: -2px 5px 13px 2px rgba(159, 167, 186, 0.23);
+    --shadowBlack50: -2px 5px 13px 2px #9fa7ba73;
+    --shadowBlack20: 0px 6px 7px rgba(51, 51, 51, 0.1);
+    --shadowpur30: 0px 6px 7px rgba(220, 224, 255, 0.49);
+    --shadowviolet20: 0 6px 18px #bface269;
+
+    /* z-index */
+    --maxzindex: 11;
+}
+
+@mixin shadow($color) {
+    box-shadow: 0 6px 17px $color;
+}
+
+@mixin flex($con, $align: center, $justify: center) {
+    display: flex;
+    @if $con == "all" {
+        align-items: $align;
+        justify-content: $justify;
+    } @else if $con == "align" {
+        align-items: $align;
+    } @else if $con == "jsutify" {
+        justify-content: $jsutify;
+    }
+}
+
+html {
+    font-size: 62.5%;
+    background: var(--cwhiteG);
+    background: var(--cblue20);
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+input {
+    padding: 1rem;
+    border: 0.2rem solid #33333373;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadowBlack20);
+    /*cursor: pointer;*/
+}
+
+button {
+    padding: 1rem;
+    border: 0.2rem solid #33333373;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadowBlack20);
+    background: none;
+    cursor: pointer;
+}
+
+a.notvisible {
+    pointer-events: none;
+}
+
+.center {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottomspace {
+    margin-bottom: 10rem;
+}
+
+@media screen and (min-width: 768px) {
+    .topspace {
+        margin-bottom: unset;
+        margin-top: 10rem;
+    }
+}

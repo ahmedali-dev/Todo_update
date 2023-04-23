@@ -1,0 +1,49 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding: 1rem 1rem;
+  border-radius: .5rem;
+  background: #E5E0FF7C;
+  box-shadow: var(--shadowBlack20);
+
+  &:hover {
+    background: #E5E0FF7C;
+  }
+
+  &_content {
+
+    &_todoname {
+      font-size: 1.3rem;
+      margin-bottom: .5rem;
+    }
+
+    &__todotime {
+      font-size: .8rem;
+    }
+
+  }
+
+  &_option {
+    display: flex;
+    gap: 1rem;
+
+    .btnEdite {
+      font-size: 2rem;
+      color: #655DBB;
+    }
+
+    button {
+      width: 3rem;
+      height: 3rem;
+      background: none;
+      border: none;
+      font-size: 2rem;
+      display: flex;
+      color: #FF597B;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

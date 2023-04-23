@@ -1,0 +1,30 @@
+.collections {
+	background: inhreit;
+	//	margin-top: 10rem;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column;
+
+	.collList {
+		width: 100%;
+	}
+
+	.collHeader {
+		color: var(--cblue70);
+		text-align: center;
+		font-size: 3rem;
+		border: 0.4rem solid transparent;
+		border-bottom-color: var(--cblue70);
+		width: max-content;
+		margin-bottom: 2.6rem;
+		font-weight: 600;
+		border-radius: 0.5rem;
+	}
+
+	@media screen and (min-width: 768px) {
+		max-width: 1400px;
+		margin: auto;
+	}
+}

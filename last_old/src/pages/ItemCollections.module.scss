@@ -1,0 +1,119 @@
+.itemsContainer {
+  display: flex;
+
+  .itemColl {
+    //background: orange;
+    width: 100%;
+    padding: 1.5rem;
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &_left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0 1.5rem;
+
+        &_icon {
+          width: 4.4rem;
+          height: 4.4rem;
+          background: var(--cblue70);
+          color: var(--cblue20);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 2.4rem;
+          border-radius: 0.7rem;
+          cursor: pointer;
+
+          @media screen and (min-width: 900px) {
+            display: none;
+          }
+        }
+
+        &_name {
+          font-size: 1.5rem;
+          color: var(--cblue70);
+        }
+      }
+
+      .option {
+        $width: 0.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        cursor: pointer;
+
+        div {
+          width: $width;
+          height: $width;
+          border-radius: 50%;
+          background: var(--cblue70);
+        }
+      }
+    }
+
+    .addbtn_com {
+      margin-top: 2.8rem;
+      background: var(--cviolet50);
+      padding: 1rem;
+      border-radius: 0.7rem;
+      box-shadow: var(--shadowblue70);
+      display: none;
+
+      .btn {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        cursor: pointer;
+        color: var(--cblue70);
+
+        .i {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          width: 2.7rem;
+          height: 2.7rem;
+          border-radius: 0.7rem;
+          background: var(--cblue20);
+
+          i {
+            font-size: 1.4rem;
+            font-weight: bold;
+          }
+        }
+
+        .msg {
+          font-size: 1.4rem;
+          font-weight: bold;
+          margin-left: 1.3rem;
+        }
+      }
+
+      @media screen and (min-width: 900px) {
+        display: block;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 600px;
+    margin: 6rem auto auto auto;
+
+    .itemColl {
+      width: 600px;
+    }
+  }
+
+  @media screen and (min-width: 900px) {
+    width: 900px;
+  }
+}
+
+
+

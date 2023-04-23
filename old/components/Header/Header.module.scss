@@ -1,0 +1,38 @@
+.nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem;
+  background: #3E54AC;
+  color: white;
+
+  .activeTodoList {
+    font-size: 3rem;
+    font-weight: 900;
+    transition: transform .3s ease-in-out;
+
+    &.active {
+      transform: rotate(179deg);
+    }
+  }
+
+  .logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    transform: translate(-50%, -50%);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 3rem;
+    .activeTodoList {
+      display: none;
+    }
+  }
+}
+
+
+

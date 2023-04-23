@@ -1,0 +1,82 @@
+.item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+	padding: 1rem 1rem;
+	border-radius: 0.5rem;
+	//background: #E5E0FF7C;
+	//box-shadow: var(--shadowBlack20);
+
+	&:hover {
+		box-shadow: var(--shadowBlack20);
+		background: #e5e0ff7c;
+	}
+
+	&_content {
+		&_todoname {
+			font-size: 1.3rem;
+			margin-bottom: 0.5rem;
+		}
+
+		&__todotime {
+			font-size: 0.8rem;
+		}
+	}
+
+	&_option {
+		display: flex;
+		gap: 1rem;
+
+		.editbtn {
+			font-size: 2rem;
+			color: #655dbb;
+		}
+
+		button {
+			width: 3rem;
+			height: 3rem;
+			background: none;
+			border: none;
+			font-size: 2rem;
+			display: flex;
+			background: #ecf2ff;
+			color: #ff597b;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}
+
+.form {
+	margin-bottom: 2rem;
+
+	form {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+
+		input {
+			flex-basis: 90%;
+		}
+
+		a {
+			background: blue;
+			padding: 1rem;
+			border: 0.2rem solid #33333373;
+			border-radius: 0.5rem;
+			box-shadow: var(--shadowBlack20);
+			background: none;
+			cursor: pointer;
+			font-size: 1.2rem;
+
+			&:hover {
+				background: #655dbb;
+				border: none;
+				box-shadow: 3px 0 19px #655dbb;
+				color: white;
+			}
+		}
+	}
+}

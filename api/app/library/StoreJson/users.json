@@ -1,0 +1,42 @@
+[
+    {
+        "id": "$2y$13$mljj1mAMU6M6YR856dsJFeRaoqgLsOVNbGPOp8.UJD1twS0NXFJ5K",
+        "name": "ahmedali",
+        "email": "ahmedali11@gmail.com",
+        "password": "$2y$13$ROdkEPPcA1.4A6TtncHesO1PCtYLW.30Iw24fE5I==mP4UTa8Jyib6",
+        "avatar": "https:\/\/images.unsplash.com\/photo-1679669693237-74d556d6b5ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+        "ip": "::1",
+        "user_created": 1681432827,
+        "user_updated": 1681432827
+    },
+    {
+        "id": "$2y$13$EHPxtHsWtGlEBDOLv7JpleaRnJnj5ID5y7OFnO0v9mnbeGChD5MCS",
+        "name": "ahmedali",
+        "email": "ahmedali111@gmail.com",
+        "password": "$2y$13$iA7lfoI0wFazS3WgYkVlheZ9eY.EhtRUkrslAWoKfIaTHC4oMxq9y",
+        "avatar": "https:\/\/images.unsplash.com\/photo-1679669693237-74d556d6b5ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+        "ip": "::1",
+        "user_created": 1681432864,
+        "user_updated": 1681432864
+    },
+    {
+        "id": "$2y$13$ZPU9XE.JMD2V4ZsycsUfnupyRg4Ptv2XhIl5bugATzUcjIC519P1y",
+        "name": "ahmedali",
+        "email": "ahmedali1111@gmail.com",
+        "password": "$2y$13$WWyiivTNmn7ae93vwEUnreWPR.9r\/5y4yxztggltHNiJJFLy0sDom",
+        "avatar": "https:\/\/images.unsplash.com\/photo-1679669693237-74d556d6b5ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+        "ip": "::1",
+        "user_created": 1681534898,
+        "user_updated": 1681534898
+    },
+    {
+        "id": "$2y$13$nn2oHuYd\/f.WIwHYPQ5J2uzX1pvj6.HMB4ZG10Q7EwiUPMvkKijZG",
+        "name": "ahmedali",
+        "email": "abc@gmail.com",
+        "password": "$2y$13$hVm657oIceH.A7\/KlniJF.GOuKYk8AoMC01aaEQ3mNdt3gagXYRvq",
+        "avatar": "https:\/\/images.unsplash.com\/photo-1679669693237-74d556d6b5ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60",
+        "ip": "::1",
+        "user_created": 1681610193,
+        "user_updated": 1681610193
+    }
+]

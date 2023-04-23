@@ -1,0 +1,38 @@
+.collections {
+  margin: 4rem auto auto auto;
+  max-width: 1440px;
+  @media screen and (min-width: 2440px) {
+    zoom: 2.5;
+    margin-top: 6rem;
+  }
+
+  &_header {
+    text-align: center;
+
+    h1 {
+      color: var(--blue);
+      font-size: 3rem;
+      width: max-content;
+      margin: auto;
+      border-bottom: .3rem solid var(--blue);
+    }
+  }
+
+
+  &_btn {
+    &_btn {
+      width: 20rem;
+      margin: auto;
+      margin: 2rem auto;
+
+      button {
+        width: inherit;
+        border-color: var(--gray);
+
+        svg {
+          fill: var(--gray);
+        }
+      }
+    }
+  }
+}

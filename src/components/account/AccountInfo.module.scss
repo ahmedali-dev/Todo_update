@@ -1,0 +1,189 @@
+@mixin flex($a: center, $b: center) {
+    display: flex;
+    align-items: $a;
+    justify-content: $b;
+}
+
+.AccountInfo {
+    padding: 1rem;
+    margin-top: 3rem;
+
+    &_image {
+        text-align: center;
+        &_img {
+            position: relative;
+            width: 20rem;
+            height: 20rem;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &:hover {
+                div button {
+                    bottom: 0;
+                }
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                //border-radius: 50%;
+            }
+
+            div button {
+                position: absolute;
+                width: 100%;
+                height: 32%;
+                bottom: -100%;
+                left: 0;
+                z-index: 1;
+                background: #ffffff7a;
+                border: none;
+                backdrop-filter: blur(10px);
+                font-size: 1.7rem;
+                font-weight: bolder;
+                transition: bottom 0.4s ease-in-out;
+            }
+        }
+
+        &_name {
+            margin-top: 2rem;
+        }
+    }
+
+    .info {
+        background: var(--cblue70);
+        margin-top: 3rem;
+        border-radius: 0.7rem;
+        box-shadow: var(--shadowblue70);
+        padding: 3rem 1rem;
+
+        &_card {
+            @include flex(center, space-between);
+            margin-top: 3rem;
+
+            &_info {
+                p {
+                    margin-bottom: 1rem;
+                    font-weight: 600;
+                    color: var(--cdark40);
+                }
+
+                h3 {
+                    color: var(--cwhite);
+                }
+            }
+
+            &_action button {
+                border: none;
+                background: var(--cviolet50);
+                color: var(--cblack);
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.Signout {
+    width: 27rem;
+    margin: auto;
+    margin-top: 3rem;
+
+    button {
+        width: 100%;
+        border: none;
+        box-shadow: var(--shadowblue70);
+        background: var(--cblue70);
+        color: var(--cwhite);
+        padding: 1.4rem 0;
+    }
+}
+
+.EditAccountInfo {
+    padding: 1rem;
+    margin-top: 3rem;
+
+    &_img {
+        margin: auto;
+        overflow: hidden;
+        border-radius: 50%;
+        width: 20rem;
+        height: 20rem;
+        margin-bottom: 2rem;
+        box-shadow: var(--shadowBlack20);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &_form {
+        width: 100%;
+        //background-color: blue;
+
+        form {
+            .file {
+                text-align: center;
+                label {
+                    display: inline-block;
+                    font-size: 2rem;
+                    background-color: var(--cblue70);
+                    color: var(--cwhite);
+                    box-shadow: var(--shadowblue70);
+                    width: 100%;
+                    padding: 1rem;
+                    border-radius: 0.7rem;
+                }
+                input[type="file"] {
+                    display: none;
+                }
+            }
+
+            div {
+                width: 100%;
+                margin-top: 1.7rem;
+                @include flex(flex-start, center);
+                flex-flow: column;
+
+                input {
+                    width: 100%;
+                    height: 5rem;
+                    margin-top: 0.6rem;
+
+                    &:focus {
+                        border: none;
+                        outline: 0.2rem solid var(--cblue70);
+                    }
+                }
+
+                p {
+                    color: red;
+                    margin-top: 0.4rem;
+                    font-size: 1.2rem;
+                }
+
+                button {
+                    width: 80%;
+                    margin: auto;
+                    padding: 1.4rem;
+                    background: var(--cblue70);
+                    color: var(--cwhite);
+                    font-size: 1.4rem;
+                    box-shadow: var(--shadowblue70);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .AccountInfo,
+    .EditAccountInfo {
+        width: 568px;
+        margin: auto;
+        margin-top: 6rem;
+    }
+}
