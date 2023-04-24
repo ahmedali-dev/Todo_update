@@ -53,7 +53,6 @@ const TaskSlice = createSlice({
     reducers: {
         ChangeStatusTask: (state, action) => {
             const data = action.payload;
-            console.log(data);
 
             const dataChnage = state.fetch?.data[0]?.tasks.map(task => {
                 if (task.id == data.id) {
@@ -64,6 +63,33 @@ const TaskSlice = createSlice({
             })
 
             // console.log(dataChnage);
+            state.fetch.data[0].tasks = dataChnage;
+        },
+
+        UpdateTask: (state, action) => {
+            const data = action.payload;
+
+            const dataChnage = state.fetch?.data[0]?.tasks.map(task => {
+                if (task.id == data.id) {
+                    task.name = data.task;
+                }
+
+                return task
+            })
+
+            // console.log(dataChnage);
+            state.fetch.data[0].tasks = dataChnage;
+        },
+
+        RemoveTask: (state, action) =>{
+            const data = action.payload;
+
+
+            const dataChnage = state.fetch?.data[0]?.tasks.filter(task => {
+               return task.id !== data.id
+            })
+
+            console.log(dataChnage);
             state.fetch.data[0].tasks = dataChnage;
         }
     },
@@ -116,5 +142,5 @@ const TaskSlice = createSlice({
 });
 
 
-export const {ChangeStatusTask} = TaskSlice.actions;
+export const {ChangeStatusTask, RemoveTask,UpdateTask} = TaskSlice.actions;
 export default TaskSlice.reducer;
