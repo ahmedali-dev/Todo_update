@@ -10,6 +10,7 @@
   position: relative;
 
 
+
   &_item_task_linec {
 
     width: 3rem;
@@ -261,4 +262,9 @@
       }
     }
   }
+}
+
+.items_comp{
+  background: var(--gray);
+  box-shadow: unset;
 }

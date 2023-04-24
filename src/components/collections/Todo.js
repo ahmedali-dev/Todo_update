@@ -148,7 +148,7 @@ const Todo = ({ id, task, comp, fetchTask, hanlderComplete }) => {
     setEdit(false);
   };
   return (
-    <div className={css.items} key={id}>
+    <div className={`${css.items} ${comp && css.items_comp}`} key={id}>
       <div
         className={css.items_item_task_linec}
       >

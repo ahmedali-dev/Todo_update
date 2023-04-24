@@ -39,7 +39,7 @@ const Items = () => {
         if (fetchCollection.data.length == 0) {
             dispatch(fetchCollectionData(ctx.token));
         }
-    }, []);
+    }, [dispatch]);
 
 
     // const handleLeavePage = () => {
