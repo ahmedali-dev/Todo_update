@@ -1,6 +1,6 @@
 .items {
   background: var(--white);
-  padding: 2rem 1rem;
+  padding: 1.2rem 1rem;
   border-radius: .7rem;
   display: flex;
   align-items: center;
@@ -8,7 +8,6 @@
   box-shadow: var(--shadowBlue);
   margin-top: 1.5rem;
   position: relative;
-
 
 
   &_item_task_linec {
@@ -171,7 +170,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 1rem 2rem;
+      //padding: 1rem 2rem;
       cursor: pointer;
       text-transform: capitalize;
       width: 100%;
@@ -199,8 +198,8 @@
 
 
       svg {
-        width: 1.7rem;
-        height: 1.7rem;
+        width: 2rem;
+        height: 2rem;
       }
     }
   }
@@ -208,7 +207,7 @@
 
   &_item_task_options_active {
     //display: flex;
-    width: calc(100% / 2);
+    width: 15rem;
     //animation: optionAnim 1s linear;
 
     @keyframes optionAnim {
@@ -229,24 +228,28 @@
     width: 100%;
     gap: 1rem;
 
-    &_input{
+    &_input {
       width: 100%;
-      input{
+
+      input {
         width: 100%;
         border-color: var(--blueLight);
 
-        &:focus{
+        &:focus {
           outline-color: var(--blue);
         }
       }
-      p{
+
+      p {
         color: var(--redLight);
       }
     }
-    &_btn{
+
+    &_btn {
       width: 7rem;
       height: 4.4rem;
-      button{
+
+      button {
         width: 100%;
         height: 100%;
         display: flex;
@@ -255,8 +258,8 @@
         padding: 1.3rem;
         background: var(--blue);
         border-color: var(--blue);
-        
-        svg{
+
+        svg {
           fill: var(--white);
         }
       }
@@ -264,7 +267,7 @@
   }
 }
 
-.items_comp{
+.items_comp {
   background: var(--gray);
   box-shadow: unset;
 }
