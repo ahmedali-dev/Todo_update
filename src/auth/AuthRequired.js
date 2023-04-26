@@ -1,5 +1,6 @@
 import { Navigate } from "react-router-dom";
 import Navbar from "../pages/Navbar";
+import React from "react";
 
 //authentication required to reload the pages
 export const AuthRequired = (path, element, auth, more = null) => {
@@ -13,6 +14,7 @@ export const AuthRequired = (path, element, auth, more = null) => {
           <>
             <Navbar />
             {element}
+            <div className={"navLine"}></div>
           </>
         )}
       </>
