@@ -7,7 +7,9 @@
   padding: 1rem;
   z-index: 3;
   box-shadow: var(--shadowBlue);
+  overflow-y: auto;
 
+  height: 100vh;
   @media screen and (min-width: 500px) {
     width: 30rem;
     height: auto;
@@ -27,6 +29,13 @@
   &_form {
     width: 100%;
     //background: firebrick;
+
+    &_img {
+      width: 100%;
+      height: 30rem;
+      border-radius: .7rem;
+      box-shadow: var(--shadowBlue);
+    }
 
 
     .formGroup_input {

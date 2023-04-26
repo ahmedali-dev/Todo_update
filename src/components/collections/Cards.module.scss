@@ -21,6 +21,10 @@
     position: relative;
 
     &_link {
+      display: flex;
+      flex-flow: column;
+      padding: 1rem;
+
       &_image {
         height: 15rem;
         border-radius: .7rem;
@@ -155,7 +159,7 @@
     flex-flow: column;
     align-items: flex-start;
     width: 100%;
-   
+
 
     .rowCard_card_active {
       background: var(--blue) !important;
